@@ -9,7 +9,7 @@ DATA_FILE = DATA_DIR/"issues.json"
 def load_data():
     if DATA_FILE.exists():
         with open (DATA_FILE, "r")as f:
-            content =f.read
+            content =f.read()
             if content.strip():
                 return json.loads (content)
     return []
